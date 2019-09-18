@@ -1,0 +1,7 @@
+<head></head>
+<body>
+    <h1>Bye, world!</h1>
+    <img src='/static/img/smile.jpg'>
+</body>
+
+
