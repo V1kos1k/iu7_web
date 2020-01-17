@@ -1,0 +1,11 @@
+{
+    "serverHost": "0.0.0.0",
+    "serverPort": "4444",
+    "databaseHost": "postgres",
+    "databasePort": "5432",
+    "databaseName": "table_hub",
+    "databaseUser": "postgres",
+    "databasePassword": "",
+    "userImagePath": "/uploads/users/",
+    "deskImagePath": "/uploads/desks/"
+}

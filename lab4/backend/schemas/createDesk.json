@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "required": [
+        "maxPeople",
+        "title",
+        "isPrivate",
+        "gender",
+        "ages",
+        "city",
+        "genres",
+        "games"
+    ],
+    "properties": {
+        "maxPeople": {
+            "type": "integer"
+        },
+        "title": {
+            "type": "string"
+        },
+        "isPrivate": {
+            "type": "boolean"
+        },
+        "gender": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ages": {
+            "type": "array",
+            "items": { "type": "integer" }
+        },
+        "city": {
+            "type": "string"
+        },
+        "genres": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "games": {
+            "type": "array",
+            "items": { "type": "string" }
+        }
+    },
+    "additionalProperties": false,
+    "errorMessage": "Error! username, password, email, birthDate, gender(integer 0 or 1) are required."
+}

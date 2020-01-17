@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "required": ["username", "password", "email", "birthDate", "gender"],
+    "properties": {
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "birthDate": {
+            "type": "string",
+            "format": "date"
+        },
+        "gender": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+        }
+    },
+    "additionalProperties": false,
+    "errorMessage": "Error! username, password, email, birthDate, gender(integer 0 or 1) are required."
+}

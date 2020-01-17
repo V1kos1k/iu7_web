@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "required": [
+        "newName",
+        "newSurname",
+        "newBirthDate",
+        "newGender",
+        "newCity",
+        "newAboutMe",
+        "newFavoriteGenres",
+        "newFavoriteGames"
+    ],
+    "properties": {
+        "newName": {
+            "type": ["string", "null"]
+        },
+        "newSurname": {
+            "type": ["string", "null"]
+        },
+        "newBirthDate": {
+            "type": "string",
+            "format": "date"
+        },
+        "newGender": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+        },
+        "newCity": {
+            "type": ["string", "null"]
+        },
+        "newAboutMe": {
+            "type": ["string", "null"]
+        },
+        "newFavoriteGenres": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "newFavoriteGames": {
+            "type": "array",
+            "items": { "type": "string" }
+        }
+    },
+    "additionalProperties": false,
+    "errorMessage": "Error!"
+}

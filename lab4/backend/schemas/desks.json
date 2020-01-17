@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "gender": { "type": "string" },
+        "age": { "type": "string" },
+        "city": { "type": "string" },
+        "tags": { "type": "string" }
+    },
+    "required": ["gender", "age", "city", "tags"]
+}
