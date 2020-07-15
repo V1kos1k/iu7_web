@@ -27,15 +27,6 @@ export default class ChatApi extends BaseApi {
     }
   }
 
-  async getUserChats(username) {
-    let res = await this.axios.get(`/api/users/${username}/chats/`);
-    if (res.status === 200 && res.data) {
-      return res.data;
-    } else {
-      throw res;
-    }
-  }
-
   get username(){
     return window.localStorage.getItem("username");
   }

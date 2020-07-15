@@ -1,0 +1,10 @@
+.notification__profile-avatar {
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px;
+}
+
+.notification__link {
+    text-decoration: none;
+    color: black;
+}

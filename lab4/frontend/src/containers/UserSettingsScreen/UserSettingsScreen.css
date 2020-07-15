@@ -1,0 +1,32 @@
+.content_theme_user {
+  width: 70%;
+}
+
+.user-settings__card {
+  min-width: 70%;
+  margin-top: 5%;
+}
+
+.user-settings__input-photo {
+  display: none;
+}
+
+.user-settings__button{
+  background-color: var(--button-color) !important;
+  color: var(--text-color) !important;
+  margin-top: 10px !important;
+  border-radius: 10px !important;
+}
+
+.user-settings__button-avatar {
+  overflow: hidden;
+  margin-top: 3px !important;
+  width: 100%;
+}
+
+.user-settings__avatar { 
+  width: 140px;
+  height: 140px;
+  width: 100% !important;
+  height: 3% !important;
+};

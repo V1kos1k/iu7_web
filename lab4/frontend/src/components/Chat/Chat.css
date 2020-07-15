@@ -1,0 +1,69 @@
+.chat__card {
+  width: 100%;
+  height: 100%;
+}
+
+.chat__header {
+  background-color: var(--bg-color-card);
+  flex-direction: row-reverse;
+  text-align: right;
+  padding: 10px;
+}
+
+.chat__background-color {
+  background-color: var(--bg-color-card);
+}
+
+.chat__avatar {
+  margin-left: 25px;
+  width: 45px !important;
+  height: 45px !important;
+  color: black;
+}
+
+.chat__input {
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 14px; 
+  border: 1px solid var(--bg-color-card);
+  width: 100%;
+  outline: none;
+}
+
+.chat__icon-button {
+  background-color: var(--button-color) !important; 
+  color: white !important;
+}
+
+.chat__content {
+  height: 500px;
+  overflow: auto;
+}
+
+.chat__list-item-come {
+  justify-content: flex-end !important;
+}
+
+.chat__list-item-me {
+  flex-direction: column;
+  align-items: start !important;
+}
+
+.chat__chip-me {
+  background-color: var(--bg-color-card) !important;
+}
+
+.chat__sendtime {
+  color: grey;
+  font-size: 14px;
+}
+
+.chat__user-link {
+  text-decoration: none;
+  color: black;
+}
+
+.chat__user-text {
+  margin: 2px;
+  padding-left: 4px;
+}

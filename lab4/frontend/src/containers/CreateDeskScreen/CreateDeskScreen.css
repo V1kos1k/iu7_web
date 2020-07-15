@@ -1,0 +1,45 @@
+.content_theme_create-desk {
+  width: 65%;
+}
+
+.create-desk__card {
+  /* min-width: 70%; */
+  /* margin-top: 5%; */
+  background-color: var(--bg-color-card) !important;
+}
+
+.create-desk__input-photo {
+  display: none;
+}
+
+.create-desk__button-avatar {
+  overflow: hidden;
+  margin-top: 3px !important;
+  width: 85%;
+  background-color: var(--button-color) !important;
+  color: var(--text-color) !important;
+  border-radius: 10px !important;
+  /* margin-left: 25% !important; */
+}
+
+.create-desk__avatar { 
+  width: 85%;
+  /* height: 3%; */
+  /* margin-left: 25%; */
+};
+
+.create-desk__label {
+  color: #585858;
+}
+
+.create-desk__text {
+  margin-top: 10px;
+}
+
+.create-desk__button {
+  background-color: var(--button-color) !important;
+  color: var(--text-color) !important;
+  margin-top: 5% !important;
+  border-radius: 10px !important;
+}
+

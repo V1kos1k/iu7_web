@@ -1,0 +1,44 @@
+.content_theme_main {
+  margin-top: 3%;
+}
+
+.main__flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main__chips-input {
+  width: 50% !important;
+  margin-bottom: 23px !important;
+}
+
+.main__link {
+  text-decoration: none;
+}
+
+.main__filter-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--text-color-secondary);
+}
+
+.main__search-icon {
+  width: 32px !important;
+  height: 32px !important;
+  padding-top: 15px;
+  color: var(--text-color-secondary);
+}
+
+.main__search-tags {
+  text-align: center;
+}
+
+.main__no-desks {
+  text-align: center;
+}
+
+.main__image{
+  height: 100%;
+  width: 420px;
+}

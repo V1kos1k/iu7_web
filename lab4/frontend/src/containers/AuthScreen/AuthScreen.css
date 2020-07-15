@@ -1,0 +1,23 @@
+.content_theme_auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth__right {
+  width: 30%;
+}
+
+.login_theme_auth {
+  margin-bottom: 20px;
+}
+
+.auth__description {
+  max-width: 600px;
+  max-height: 600px;
+  background-color: var(--bg-color-card) !important;
+  font-size: 22px;
+  line-height: 65px;
+  padding: 46px;
+  text-align: center;
+}

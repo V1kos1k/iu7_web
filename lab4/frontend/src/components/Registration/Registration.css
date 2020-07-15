@@ -1,0 +1,18 @@
+.registration__card {
+  /* width: 35%; */
+  background-color: var(--bg-color-card) !important;
+}
+
+.registration__text-field {
+  background-color: white;
+}
+
+.registration__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.registration__text {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}

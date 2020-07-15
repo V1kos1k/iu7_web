@@ -38,7 +38,19 @@ class User {
 }
 
 export default class UserStore {
+  constructor(api) {
+    this.isLoading = false;
+    this.api = api;
+
+    return this;
+  }
+
   @observable isLoading;
+
+  @computed
+  get username() {
+    return this.api.API.User.username;
+  }
 
   otherUsers = {};
 
@@ -47,18 +59,6 @@ export default class UserStore {
       this.otherUsers[username] = new User(username, this.api)
     }
     return this.otherUsers[username];
-  }
-
-  constructor(api) {
-    this.isLoading = false;
-    this.api = api;
-
-    return this;
-  }
-
-  @computed
-  get username() {
-    return this.api.API.User.username;
   }
 
   @action
@@ -89,7 +89,6 @@ export default class UserStore {
         this.isLoading = false;
       }));
   }
-
 
   @action saveSettings(file, firstname, lastname, date,
     gender, city, aboutMe, genre, game) {

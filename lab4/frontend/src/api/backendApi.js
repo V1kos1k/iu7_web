@@ -2,7 +2,7 @@ import axios from "axios";
 import AuthApi from './authApi';
 import UserApi from './userApi';
 import DeskApi from './deskApi';
-import ChatApi from "./chatApi";
+import ChatApi from './chatApi';
 
 export default class BackendApi {
   api;

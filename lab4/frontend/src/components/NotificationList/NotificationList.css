@@ -1,0 +1,12 @@
+.notification-list__card {
+    width: 500px;
+    background-color: #FCEAEA;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.notification-list__text {
+    line-height: 20px;
+    font-size: 18px;
+    text-align: center;
+}

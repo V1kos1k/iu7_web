@@ -1,0 +1,17 @@
+.minidesk__card {
+  height: 180px;
+  width: 100%;
+  } 
+
+.minidesk__image {
+  width: 34px;
+  height: 34px;
+  }
+
+.minidesk__content {
+    padding: 15px;
+  }
+
+.minidesk-header__content {
+  height: 15px;
+}

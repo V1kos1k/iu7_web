@@ -1,0 +1,44 @@
+.desk-info {
+  width: 100%;
+  height: 100%;
+}
+
+.desk-info__upper-block {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color-card);
+  padding: 16px;
+  height: 152px;
+}
+
+.desk-info__image {
+  width: 130px;
+  height: 130px;
+}
+
+.desk-info__basic-info {
+  flex-grow: 2;
+}
+
+.desk-info__title {
+  font-size: 30px;
+  margin: 10px 5px 5px 20px;
+}
+
+.desk-info__city {
+  color: rgba(0, 0, 0, 0.64);
+  margin: 5px 5px 5px 40px;
+}
+
+.desk-info__button {
+  height: max-content;
+}
+
+.desk-info__lower-block {
+  margin: 3%;
+}
+
+.desk-info__link {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+}

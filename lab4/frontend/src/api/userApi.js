@@ -1,9 +1,9 @@
-import BaseApi from './baseApi'
+import BaseApi from './baseApi';
+import UserStore from '../store/userStore';
 
 export default class UserApi extends BaseApi {
   constructor(axios) {
     super(axios);
-    this.username = this.username;
   }
 
   set username(username){
@@ -86,5 +86,5 @@ export default class UserApi extends BaseApi {
       throw 'not found';
     }
   }
-  
+
 }

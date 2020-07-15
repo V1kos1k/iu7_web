@@ -1,0 +1,8 @@
+.filter__card {
+  width: 100%;
+  background-color: var(--bg-color-card) !important;
+}
+
+.filter__label {
+  color: rgba(0, 0, 0, 0.64);
+}

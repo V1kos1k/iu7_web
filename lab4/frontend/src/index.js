@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './components/root.jsx';
 import { BrowserRouter as Router } from 'react-router-dom';
-
 import { Provider } from 'mobx-react';
+import './index.css';
+
+import Root from './containers/Root/Root';
+
 import BackendApi from './api/backendApi';
 import AuthStore from './store/authStore';
 import UserStore from './store/userStore';
@@ -11,7 +13,6 @@ import DeskStore from './store/deskStore';
 import ChatStore from './store/chatStore';
 import SocketStore from './store/socketStore';
 import NotificationStore from "./store/notificationStore";
-
 
 const api = new BackendApi(),
   authStore = new AuthStore(api),

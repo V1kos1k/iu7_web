@@ -9,9 +9,9 @@ export default class SocketStore {
   }
 
   @observable allChatMessages = [];
-  @observable allNotifications = [];
   @observable unreadMessage = [];
   @observable userChats = [];
+  @observable allNotifications = [];
 
   connect(username) {
     this.ws = new WebSocket(`ws://localhost:4444/api/users/${username}/chat`);
@@ -40,10 +40,9 @@ export default class SocketStore {
         message.messageData.map(data => {
           this.allChatMessages.push(data);
         })
-      } 
-      else if (message.type == 'nu') {
+      } else if (message.type == 'nu') {
         this.allNotifications = message.waiting;
-      }
+      } 
     }
 
     this.ws.onclose = () => {
@@ -51,7 +50,6 @@ export default class SocketStore {
       this.ws = new WebSocket(`ws://localhost:4444/api/users/${props}/chat`);
     }
   }
-
 
   addMessage = (message) => {
     this.allChatMessages.push(message);

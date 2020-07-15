@@ -1,0 +1,12 @@
+.login__card {
+  background-color: var(--bg-color-card) !important;
+  text-align: center;
+}
+
+.login__text-field {
+  background-color: white;
+}
+
+.login__title {
+  font-size: 24px;
+}

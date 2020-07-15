@@ -10,20 +10,22 @@ export default class DeskStore {
 
   @observable isLoading;
 
-  @action
-  image(deskId) {
-    this.isLoading = true;
-    return this.api.API.Desk.image(deskId)
-      .then(action(res => {
-        this.isLoading = false;
-        return res;
-      })) .catch(action(err => {
-        this.isLoading = false;
-        throw err;
-      })) .finally(() => {
-        this.isLoading = false;
-      })
-  }
+  @action 
+  createDesk(image, deskLabel, isPrivate, gender, age, 
+    city, genre, game, maxPeople) {
+      this.isLoading = true;
+      return this.api.API.Desk.createDesk(image, deskLabel, isPrivate, 
+          gender, age, city, genre, game, maxPeople)
+        .then(action(res => {
+          this.isLoading = false;
+          return res;
+        })) .catch(action(err => {
+          this.isLoading = false;
+          throw err;
+        })) .finally(action(() => {
+          this.isLoading = false;
+        }));
+    }
 
   @action
   loadDeskInfo(deskId) {
@@ -39,7 +41,7 @@ export default class DeskStore {
         this.isLoading = false; 
       })
   }
-
+  
   @action
   loadDeskMembers(deskId) {
     this.isLoading = true;
@@ -52,6 +54,36 @@ export default class DeskStore {
       })) .finally(action(() => {
         this.isLoading = false;
       }));
+  }
+
+  @action
+  loadDeskImage(deskId) {
+    this.isLoading = true;
+    return this.api.API.Desk.loadDeskImage(deskId)
+      .then(action(res => {
+        this.isLoading = false;
+        return res;
+      })) .catch(action(err => {
+        this.isLoading = false;
+        throw err;
+      })) .finally(() => {
+        this.isLoading = false;
+      })
+  }
+
+  @action
+  outOfTheBoard(deskId, username) {
+    this.isLoading = true;
+    return this.api.API.Desk.outOfTheBoard(deskId, username)
+      .then(action(res => {
+        this.isLoading = false;
+        return res;
+      })) .catch(action(err => {
+        this.isLoading = false;
+        throw err;
+      })) .finally(action(() => {
+        this.isLoading = false;
+      }))
   }
 
   @action
@@ -70,9 +102,9 @@ export default class DeskStore {
   }
 
   @action
-  outOfTheBoard(deskId, username) {
+  searchDesk(gender, age, city, tags) {
     this.isLoading = true;
-    return this.api.API.Desk.outOfTheBoard(deskId, username)
+    return this.api.API.Desk.searchDesk(gender, age, city, tags)
       .then(action(res => {
         this.isLoading = false;
         return res;
@@ -113,35 +145,4 @@ export default class DeskStore {
         this.isLoading = false;
       }));
   }
-
-  @action
-  searchDesk(gender, age, city, tags) {
-    this.isLoading = true;
-    return this.api.API.Desk.searchDesk(gender, age, city, tags)
-      .then(action(res => {
-        this.isLoading = false;
-        return res;
-      })) .catch(action(err => {
-        this.isLoading = false;
-        throw err;
-      })) .finally(action(() => {
-        this.isLoading = false;
-      }))
-  }
-
-  @action createDesk(image, deskLabel, isPrivate, gender, age, 
-    city, genre, game, maxPeople) {
-      this.isLoading = true;
-      return this.api.API.Desk.createDesk(image, deskLabel, isPrivate, 
-          gender, age, city, genre, game, maxPeople)
-        .then(action(res => {
-          this.isLoading = false;
-          return res;
-        })) .catch(action(err => {
-          this.isLoading = false;
-          throw err;
-        })) .finally(action(() => {
-          this.isLoading = false;
-        }));
-    }
 }

@@ -1,6 +1,6 @@
-import BaseApi from './baseApi'
-import AuthStore from '../store/authStore'
-import jwtDecode from "jwt-decode"
+import BaseApi from './baseApi';
+import AuthStore from '../store/authStore';
+import jwtDecode from "jwt-decode";
 
 export default class AuthApi extends BaseApi {
   constructor(axios) {
@@ -22,7 +22,9 @@ export default class AuthApi extends BaseApi {
     let res = await this.axios.post("/api/signin", 
         {username: username || this.username, 
           password: password || this.password});
+    
     if (res.status === 200 && res.data) {
+      
       this.username = username;
       this.token = res.data.token;
       this.settokenUpdater(this.refreshToken);

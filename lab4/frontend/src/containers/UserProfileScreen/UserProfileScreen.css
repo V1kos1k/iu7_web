@@ -1,0 +1,9 @@
+.content_theme_user-profile {
+  width: 65%;
+}
+
+.user-profile__lower-block {
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-between;
+}

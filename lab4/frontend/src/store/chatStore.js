@@ -63,18 +63,4 @@ export default class ChatStore {
       }));
   }
 
-  @action
-  getUserChats(username) {
-    this.isLoading = true;
-    return this.api.API.Chat.getUserChats(username)
-      .then(action(res => {
-        this.isLoading = false;
-        return res;
-      })) .catch(action(err => {
-        this.isLoading = false;
-        throw err;
-      })) .finally(action(() => {
-        this.isLoading = false;
-      }))
-  }
 }

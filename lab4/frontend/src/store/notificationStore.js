@@ -1,18 +1,19 @@
-import {action, computed, observable, observe, reaction} from "mobx";
+import {action, observable, reaction} from "mobx";
 
 
 export default class NotificationStore {
-
-    @observable activeNotificationCount = 0;
-    @observable notifications = [];
-
     constructor(socketStore, userStore, deskStore) {
         this.socketStore = socketStore;
         this.userStore = userStore;
         this.deskStore = deskStore;
         reaction(() => this.socketStore.allNotifications, () => this.allNotifications())
+
+        return this;
     }
 
+    @observable activeNotificationCount = 0;
+    @observable notifications = [];
+    
     @action
     allNotifications(){
         let newNotifications = this.socketStore.allNotifications.map((data) => {
@@ -32,6 +33,7 @@ export default class NotificationStore {
         this.deskStore.acceptUser(notification.desk_id, notification.user.username)
             .then(action(res => {
                 this.activeNotificationCount--;
+                console.log('ok')
             })).catch(action(err => {
                 throw err;
             }))
@@ -46,4 +48,5 @@ export default class NotificationStore {
             throw err;
         }))
     }
+
 }

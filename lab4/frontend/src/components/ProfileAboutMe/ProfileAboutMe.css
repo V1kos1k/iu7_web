@@ -1,0 +1,7 @@
+.profile-aboutme__card {
+      min-height: 300px;
+      width: 25%;
+      font-size: 18px;
+      text-align: center;
+      background-color: var(--bg-color-card) !important
+    }

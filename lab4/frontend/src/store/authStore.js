@@ -1,17 +1,16 @@
-import {observable, action, computed} from "mobx";
+import { observable, action, computed } from 'mobx';
 
 export default class AuthStore {
-  @observable isLoading;
-  @observable isLogin;
-
   constructor(api) {
-
     this.isLoading = false;
     this.isLogin = false;
     this.api = api;
 
     return this;
   }
+
+  @observable isLoading;
+  @observable isLogin;
 
   @action login(username, password) {
     this.isLoading = true;
@@ -28,7 +27,7 @@ export default class AuthStore {
         this.isLoading = false;
       }));
   }
-  
+
   @action registration(username, email, password, date, gender) {
     this.isLoading = true;
     return this.api.API.Auth.reggister(username, email, password, date, gender)

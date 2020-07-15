@@ -1,0 +1,22 @@
+.navbar {
+  box-shadow: none;
+  background-color: var(--bg-color) !important;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.link-button {
+  color: white;
+}
+
+.logo {
+  height: 54px; 
+  width: 200px;
+}
+
+.navbar__toolbar {
+  display: flex;
+  justify-content: space-around;
+}

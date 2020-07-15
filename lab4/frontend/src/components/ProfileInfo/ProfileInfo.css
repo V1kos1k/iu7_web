@@ -1,0 +1,41 @@
+.profile-info__card {
+  /* width: 92%; */
+  background-color: var(--bg-color-card) !important;
+}
+
+.profile-info__avatar {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.profile-info__button-write {
+  min-width: 125px;
+  margin-top: 15px;
+  background-color: var(--button-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: bold;  
+  text-transform: capitalize;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.profile-info__button-write:hover {
+  background-color: var(--button-color-hovered);
+  
+}
+
+.profile-info__button-edit {
+  border-radius: 33px;
+  padding: 10px 11px 10px 12px;
+}
+
+.profile-info__link {
+  text-decoration: none;
+}
+
+.profile-info__box {
+  height: 100%;
+  align-self: flex-end;
+}

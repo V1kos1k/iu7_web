@@ -1,0 +1,15 @@
+.сhip__root {
+    box-shadow: none !important;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    
+}
+
+.chip {
+   margin: 2px;
+}
+
+.сhip__root::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,11 @@
+.profile-desk-panel {
+  width: 73%;
+}
+
+.desk-panel__link {
+  text-decoration: none;
+}
+
+.profile-desk-panel-paper {
+  background-color: var(--bg-color-card) !important ;
+}
